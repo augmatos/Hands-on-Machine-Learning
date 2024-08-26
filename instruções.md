@@ -50,3 +50,14 @@
   ```bash
   python -m spacy train config.cfg --output ./model --paths.train ./training_data.spacy --paths.dev ./training_data.spacy
 - **Descrição:** O comando treina o modelo e salva o modelo treinado no diretório `./model`, usando os dados de treinamento e validação especificados.
+
+## 6° Passo: Validação e Teste do Modelo
+
+- **Descrição:** Após o treinamento, o modelo é avaliado com dados de validação para verificar sua eficiência e desempenho. Isso é essencial para garantir que o modelo generalize bem para novos dados.
+
+- **Executar o Script de Metrica:**
+  - **Script:** `4_metricas.py`
+  - **Descrição:** Este script carrega o modelo `./model/best-model`, lê o arquivo `test_data.spacy` e avalia o desempenho geral do modelo.
+- **Executar o Script de Metrica:**
+  - **Script:** `5_metricas_por_entidades.py`
+  - **Descrição:** Este script carrega o modelo `./model/best-model`, lê o arquivo `test_data.spacy` e avalia o desempenho do modelo para cada uma das entidades.
