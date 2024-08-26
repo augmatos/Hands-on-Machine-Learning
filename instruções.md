@@ -68,3 +68,7 @@
   ```bash
   python -m spacy debug data ./config.cfg --verbose
 - **Descrição:** Este comando ajuda a identificar e corrigir erros na configuração e nos dados de treinamento do modelo. Ele fornece um diagnóstico detalhado dos problemas encontrados, o que é útil para ajustar a configuração e melhorar a qualidade do modelo.
+
+## 8° Passo: Atualização e Melhoria Contínua do Modelo
+
+- **Descrição:** Após a validação de erros, o modelo treinado é utilizado para realizar a extração de dados, o que permite aumentar a quantidade de dados de treinamento. Isso resulta em um ciclo contínuo de aprimoramento do modelo. Cada novo ciclo de treinamento utiliza o modelo atualizado para melhorar suas previsões e gerar novos modelos.
