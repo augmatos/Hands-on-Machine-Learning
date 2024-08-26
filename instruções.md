@@ -61,3 +61,10 @@
 - **Executar o Script de Metrica:**
   - **Script:** `5_metricas_por_entidades.py`
   - **Descrição:** Este script carrega o modelo `./model/best-model`, lê o arquivo `test_data.spacy` e avalia o desempenho do modelo para cada uma das entidades.
+ 
+## 7° Passo: Validação de Erros
+
+- **Executar o Comando:**
+  ```bash
+  python -m spacy debug data ./config.cfg --verbose
+- **Descrição:** Este comando ajuda a identificar e corrigir erros na configuração e nos dados de treinamento do modelo. Ele fornece um diagnóstico detalhado dos problemas encontrados, o que é útil para ajustar a configuração e melhorar a qualidade do modelo.
