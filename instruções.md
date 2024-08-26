@@ -42,3 +42,11 @@
 - **Executar o Comando:**
   ```bash
   python -m spacy init config config.cfg --lang pt --pipeline ner --optimize accuracy --transformers
+
+## 5° Passo: Treinamento do Modelo
+
+- **Descrição:** Este passo inicia o treinamento do modelo de NLP usando a configuração definida no arquivo `config.cfg` e os dados preparados no arquivo `training_data.spacy`.
+- **Executar o Comando:**
+  ```bash
+  python -m spacy train config.cfg --output ./model --paths.train ./training_data.spacy --paths.dev ./training_data.spacy
+- **Descrição:** O comando treina o modelo e salva o modelo treinado no diretório `./model`, usando os dados de treinamento e validação especificados.
