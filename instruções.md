@@ -43,7 +43,14 @@
   ```bash
   python -m spacy init config config.cfg --lang pt --pipeline ner --optimize accuracy --transformers
 
-## 5° Passo: Treinamento do Modelo
+## 5° Passo: Validação de Erros
+
+- **Executar o Comando:**
+  ```bash
+  python -m spacy debug data ./config.cfg --verbose
+- **Descrição:** Este comando ajuda a identificar e corrigir erros na configuração e nos dados de treinamento do modelo. Ele fornece um diagnóstico detalhado dos problemas encontrados, o que é útil para ajustar a configuração e melhorar a qualidade do modelo.
+
+## 6° Passo: Treinamento do Modelo
 
 - **Descrição:** Este passo inicia o treinamento do modelo de NLP usando a configuração definida no arquivo `config.cfg` e os dados preparados no arquivo `training_data.spacy`.
 - **Executar o Comando:**
@@ -51,7 +58,7 @@
   python -m spacy train config.cfg --output ./model --paths.train ./training_data.spacy --paths.dev ./training_data.spacy
 - **Descrição:** O comando treina o modelo e salva o modelo treinado no diretório `./model`, usando os dados de treinamento e validação especificados.
 
-## 6° Passo: Validação e Teste do Modelo
+## 7° Passo: Validação e Teste do Modelo
 
 - **Descrição:** Após o treinamento, o modelo é avaliado com dados de validação para verificar sua eficiência e desempenho. Isso é essencial para garantir que o modelo generalize bem para novos dados.
 
@@ -61,13 +68,6 @@
 - **Executar o Script de Metrica:**
   - **Script:** `5_metricas_por_entidades.py`
   - **Descrição:** Este script carrega o modelo `./model/best-model`, lê o arquivo `test_data.spacy` e avalia o desempenho do modelo para cada uma das entidades.
- 
-## 7° Passo: Validação de Erros
-
-- **Executar o Comando:**
-  ```bash
-  python -m spacy debug data ./config.cfg --verbose
-- **Descrição:** Este comando ajuda a identificar e corrigir erros na configuração e nos dados de treinamento do modelo. Ele fornece um diagnóstico detalhado dos problemas encontrados, o que é útil para ajustar a configuração e melhorar a qualidade do modelo.
 
 ## 8° Passo: Atualização e Melhoria Contínua do Modelo
 
