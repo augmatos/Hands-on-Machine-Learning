@@ -18,7 +18,7 @@
              "CPF/CNPJ": "",
              "Safra": [""],
              "Produto": [""],
-             "Credor": ["GIRA - GESTÃO INTEGRADA DE RECEBÍVEIS DO AGRONEGÓCIO S/A"],
+             "Credor": [""],
              "Número do Registro": [""],
              "Quantidade": [""],
              "Número de Matrícula": [""]
