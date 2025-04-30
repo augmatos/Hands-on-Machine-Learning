@@ -36,3 +36,5 @@ venv
 1_end_to_end_machine_learning_project.ipynb
 
 datasets\spams
+
+my_mnist.data
