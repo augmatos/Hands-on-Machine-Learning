@@ -1,0 +1,5 @@
+# Os notebooks Jupyter guardam as imagens dos gráficos embutidas (base64), o que
+# infla a contagem de bytes e faz o GitHub reportar ~100% "Jupyter Notebook".
+# Marcá-los como documentação os mantém visíveis no repo, mas fora da barra de
+# linguagens — que passa a refletir o código Python real.
+*.ipynb linguist-documentation
